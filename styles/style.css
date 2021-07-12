@@ -225,7 +225,7 @@ top blog css
 /*-----------------
  Mesia Queries
 ------------------ */
-@media only screen and (max-width:688px) {
+@media only screen and (max-width:768px) {
     .navbar{
         width:100%;
     } 
