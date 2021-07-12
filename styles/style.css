@@ -223,14 +223,19 @@ top blog css
 }
 
 /*-----------------
- Mesia Queries
+ Media Queries
 ------------------ */
+/* Mobile view */
 @media only screen and (max-width:768px) {
     .navbar{
-        width:100%;
+       padding: 0 20px;
     } 
     .container{
         width: 100%;
+        padding: 0;
+    }
+    .top-players, .top-blogs,.latest-course{
+        padding:20px;
     }
     .players, .blogs, .courses{
         grid-template-columns: repeat(1,1fr);
@@ -248,6 +253,39 @@ top blog css
         align-items: center;
     }
 
-
+    .course{
+        margin:auto;
+    }
      
+}
+
+/* Tablet view  */
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .navbar{
+        padding: 0 20px;
+     } 
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    .top-players, .top-blogs,.latest-course{
+        padding:20px;
+    }
+    .players,.courses{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .player{
+        justify-content: center;
+    }
+
+    .player-name{
+        width: 150px;
+    }
+
+  .courses{
+    grid-row-gap: 25px;
+  }
+    
 }
