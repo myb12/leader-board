@@ -93,11 +93,12 @@ nav{
     font-size: 16px;
     margin-right: 36px;
 }
+
 /*---------------- 
 top players style--
 ------------------ */
 
- .top-players{
+.top-players{
    margin-bottom: 25px;
 } 
 .section-title{
@@ -219,4 +220,36 @@ top blog css
     justify-content: center;
     margin-left: 30px;
 
+}
+
+/*-----------------
+ Mesia Queries
+------------------ */
+@media only screen and (max-width:688px) {
+    .navbar{
+        width:100%;
+    } 
+    .container{
+        width: 100%;
+    }
+    .players, .blogs,{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .player, .blog{
+        flex-direction: column;
+    }
+
+    .player-name{
+        margin-left: 0;
+    }
+
+    .blog{
+        align-items: center;
+    }
+
+    .courses{
+        grid-template-columns: repeat(2,1fr);
+    }
+     
 }
